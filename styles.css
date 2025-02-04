@@ -1,0 +1,397 @@
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #970202;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: #b71c1c;
+    border-radius: 5px;
+}
+
+/* Main Section */
+main {
+    text-align: center;
+    padding: 5px 5px;
+}
+
+/* Footer Styling */
+footer {
+    background: #000000;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Left Logo Styling */
+.header-container {
+    position: relative;
+}
+
+.left-logo {
+    position: absolute;
+    left: -10px;  /* Adjust this value as needed to move it further left */
+}
+
+/* Home Image Styling */
+.home-image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.home-image {
+    max-width: 100%;   /* Makes the image responsive */
+    height: auto;      /* Maintain the aspect ratio */
+}
+
+/* Live Darshan Styling */
+.live-darshan-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.live-darshan-container iframe {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+/* Slider Styling */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: 500px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+/* Slider Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 253, 253, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Extra Footer Styling */
+.extra-footer {
+    background-color: #0c583b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.donate-btn {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.donate-btn:hover {
+    background-color: #ffc400;
+}
+
+/* Footer: Extra Section for Mandal Details */
+.extra-footer {
+    background-color: #691e00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+    margin: 5px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.donate-btn {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.donate-btn:hover {
+    background-color: #ffc400;
+}
+
+/* Footer Layout: Adding visitor count in the footer */
+.footer-visitor-count {
+    font-size: 18px;
+    margin-top: 10px;
+    color: white;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .slider-container {
+        width: 100%;
+    }
+
+    .slider {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .live-darshan-container iframe {
+        max-width: 90%;
+    }
+}
+
+/* About Section */
+
+/* About container: using flexbox for layout */
+.about-container {
+    display: flex;
+    justify-content: space-between; /* Space between text and image */
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* About text on the left */
+.about-text {
+    flex: 1; /* Takes up remaining space */
+    margin-right: 20px;
+    text-align: justify; /* Justify the text */
+}
+
+/* Image on the right */
+.about-image {
+    flex: 0 0 40%; /* 40% width for the image */
+}
+
+/* Image styling */
+.about-image img {
+    max-width: 70%; /* Ensures the image fits within the container */
+    height: auto;
+}
+
+h2 {
+    font-size: 36px; /* Change this value to make the text size bigger */
+    text-align: center; /* Optional: keeps the heading centered */
+    margin-bottom: 20px; /* Optional: adds some space below the heading */
+}
+
+/* Photo Gallery Section */
+#photo-gallery {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Donation Image Styles */
+.donation-image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.donation-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;  /* Optional: Add rounded corners */
+}
+
+/* Announcement Section (Sliding Text and Logo) */
+.announcement {
+    background-color: #ff000000;  /* Orange color for alert */
+    color: rgb(255, 0, 0);
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start; /* Align content to the left */
+    font-weight: bold;
+    font-size: 14px;  /* Adjusted font size */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;    /* Prevents overflow */
+}
+
+/* Sliding text style */
+.announcement .announcement-text {
+    display: inline-block;
+    white-space: nowrap;  /* Prevent text wrapping */
+    animation: slideText 10s linear infinite;  /* Animation for sliding in the text */
+}
+
+/* Animation for Sliding Text */
+@keyframes slideText {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    0% {
+        transform: translateX(1200%); /* Move to the left and off-screen */
+    }
+}
+
+/* Footer Layout */
+footer {
+    display: flex;
+    justify-content: space-between; /* Distribute space between sections */
+    align-items: center; /* Center elements vertically */
+    padding: 5px 0px; /* Reduced padding for a smaller footer height */
+    background-color: #000000;
+    color: white;
+    font-size: 15px; /* Reduced font size for a more compact look */
+    height: 35px; /* Fixed height for the footer */
+}
+
+/* Centered Social Media Section */
+.footer-section.social-media {
+    display: flex;
+    justify-content: center; /* Center the social media icons */
+    flex-grow: 2.5; /* Allow this section to take available space */
+}
+
+.social-icon {
+    color: white;
+    font-size: 16px; /* Reduced icon size */
+    margin: 0 6px; /* Reduced spacing between icons */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff9800;
+}
+
+/* Maker Section */
+.maker {
+    font-size: 12px; /* Reduced font size */
+    margin-left: auto; /* Push the maker name to the right */
+}
+
+/* Custom styling for the clickable address */
+.footer-section a {
+    color: white;  /* Set the text color to white */
+    text-decoration: none;  /* Remove the underline */
+}
+
+.footer-section a:hover {
+    color: #ff9800;  /* Change color when hovering, adjust as needed */
+}
